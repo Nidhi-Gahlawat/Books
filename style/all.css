@@ -1,1 +1,213 @@
+*{
+box-sizing: border-box;
+}
+body{
+    margin: 0;
+    background: url("/images/background.jpg") no-repeat center;
+}
+header{
+    margin: 0;
+    padding: 0%;
+position: relative;
+background: rgb(63,169,251);
+background: radial-gradient(circle, rgba(63,169,251,1) 0%, rgba(180,83,246,1) 100%);
+width: 100%;
+height: auto;
+overflow: auto;
 
+}
+h1{
+    text-align: center;
+    font-weight: bolder;
+    font-size: 3.5em;
+    color: rgb(241, 240, 236);
+    font-family: Pacifico;
+    margin-top: 5%;
+    margin-bottom: 6%;
+    z-index: 3;
+}#btn0{
+    border: 2px solid black;
+    position: absolute;
+    background: rgb(255, 255, 255);
+     border-radius: 5px;
+     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    top: 3%;
+    right: 338px;
+    float:right;
+    height: 32px;
+    
+}
+   #btn1{
+      border: 2px solid black;
+      position: absolute;
+      background: rgb(255, 255, 255);
+       border-radius:5px;
+       font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      top: 3%;
+      right: 250px;
+      height: 32px;
+      float: right;
+      
+  }
+  #btn2{
+      border: 2px solid black;
+      position: absolute;
+      background: rgb(255, 255, 255);
+       border-radius: 5px;
+       font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      top: 3%;
+      right: 195px;
+      float:right;
+      height: 32px;
+      
+  }
+  #btn3{
+      border: 2px solid black;
+      position: absolute;
+      background: rgb(255, 255, 255);
+       border-radius: 5px;
+       font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      top: 3%;
+      right: 25px;
+      float:right;
+      height: 32px;
+      
+  }
+  
+.dropdown{
+    display: none;
+    visibility:hidden;
+}
+.column {
+    position: relative;
+    float: left;
+    width: 25%;
+    padding: 10px;margin-left: 3.125%;margin-right: 3.125%;margin-top: 25px;
+    height: auto; /* Should be removed. Only for demonstration */
+    background-color: powderblue;left: 9%;
+    right: 9%;
+   margin-bottom: 15px;
+    margin-left: 15px;
+    margin-right: 15px;;
+  }
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+
+  .mid_cont{
+      position: relative;
+      width: 64%;
+      height: auto;
+      margin-left: 18%;
+      margin-right: 18%;
+      margin-bottom: 0;
+      background-color: white;padding: 10px;
+  }
+  .quote{
+      font-size: 17px;
+      text-align: center;
+      font-weight: bolder;
+      font-family: Helvetica, sans-serif;
+  }
+  .con{
+      font-size: 16px;
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight:400;
+
+  }
+  table{
+      
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+  }
+  table,th,td{
+      border: 2px solid black;
+      border-radius: 2px;
+    
+  }
+  th,td{
+      text-align: center;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      padding: 3px;
+      font-size: 15px;
+
+  }
+  @media only screen and (max-width: 769px) {
+    .mid_cont{
+        position: relative;
+        width: 86%;
+        height: auto;
+        margin-left: 6%;
+        margin-right: 6%;
+        margin-bottom: 0;
+        background-color: white;padding: 5px;
+    } header{
+        position: relative;
+        font-size: 0.8em;
+
+    }#btn2, #btn1,#btn3,#btn0{
+        display: none;
+        visibility: hidden;
+    }
+    .dropdown { visibility: visible;
+        
+        /* position: relative; */
+        display: inline-block;
+      }
+    .dropbtn {
+        position:absolute;
+       
+        background-color: #58b0e4;
+        color: white;
+        padding: 10px;
+        font-size: 16px;
+        border: none;
+        cursor: pointer;
+        right: 2px;top: 5px;
+      }
+      .arrow,.arrow1,.arrow2 {
+        width: 27px;
+      height:3px;
+      background-color: #333;
+      margin: 2px 0;
+      transition: 0.4s;
+    }
+      
+      
+     
+      .dropdown-content {
+        display: none; right: 0;top: 40px;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+      }
+      
+      .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+      }
+      
+      .dropdown-content a:hover {background-color: #f1f1f1}
+      
+      .dropdown:hover .dropdown-content {
+        display: block;
+      }
+      
+      .dropdown:hover .dropbtn {
+        background-color: #fac6ff;
+      }
+        .column {
+          width: 100%;left: 0%;margin-left:0 ;
+          right: 0;margin-bottom: 0px;margin-top: 10px;
+        }
+   
+}
